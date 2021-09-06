@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # KG-BERT: BERT for Knowledge Graph Completion
 
 The repository is modified from [pytorch-pretrained-BERT](https://github.com/huggingface/pytorch-pretrained-BERT) and tested on Python 3.5+.
@@ -139,4 +140,8 @@ python3 run_bert_link_prediction.py
 --gradient_accumulation_steps 1 
 --eval_batch_size 1500
 ```
+# KG_BERT
+=======
+# KG
+>>>>>>> 5851ac0f9d2a28f7d0b8beba7e1fd5d106cba1bf
 # KG_BERT
