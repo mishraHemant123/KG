@@ -139,3 +139,4 @@ python3 run_bert_link_prediction.py
 --gradient_accumulation_steps 1 
 --eval_batch_size 1500
 ```
+# KG_BERT
