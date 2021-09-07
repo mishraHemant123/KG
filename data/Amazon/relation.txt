@@ -1,0 +1,5 @@
+__Likes
+__Belongs__to
+__has_a_title
+__Purchases
+__is_co-purchased_with
