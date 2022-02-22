@@ -5,7 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 
 aifs:cash a aifs:lineItem;
-aifs:header "Cash":
+aifs:header "Cash";
 aifs:is component of aifs:currentAssets.
 
 aifs:accounts receivable a aifs:lineItem;
