@@ -4,44 +4,35 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 
-aifs:cash a aifs:lineItem;
-aifs:header "Cash";
-aifs:is component of aifs:currentAssets.
+aifs:currentAssets aifs:header "Current Assets" ;
+    aifs:is_part_of aifs:assets,
+        "Assets" .
 
-aifs:accounts receivable a aifs:lineItem;
-aifs:header "Accounts receivable" ;
-aifs:is component of aifs:currentAssets.
+aifs:currentLiabilities aifs:header "Current Liabilities" ;
+    aifs:is_part_of aifs:liabilities,
+        "liabilities" .
 
-aifs:inventries a aifs:lineItem;
-aifs:header "Inventries" ;
-aifs:is component of aifs:currentAssets.
+aifs:nonCurrentLiabilities aifs:header "NonCurrent Liabilities" ;
+    aifs:is_part_of aifs:liabilities,
+        "liabilities" .
 
-aifs:gross property, plant, and equipment a aifs:lineItem;
-aifs:header "Gross property, Plant, and Equipment";
-aifs:is component of aifs:noncurrentAssets.
+aifs:noncurrentAssets aifs:header "NonCurrent Assets" ;
+    aifs:is_part_of aifs:assets,
+        "Assets" .
 
-aifs:accumulated depreciation a aifs:lineItem;
-aifs:header "Accumulated depreciation";
-aifs:is component of aifs:noncurrentAssets.
+aifs:assets aifs:header "Assets" ;
+    aifs:is_part_of aifs:balanceSheet,
+        "Balance Sheet" .
 
-aifs:accumulated depreciation a aifs:lineItem;
-aifs:header "Intangible assets";
-aifs:is component of aifs:noncurrentAssets.
+aifs:finacials a aifs:finacials .
 
-aifs:accounts payable a aifs:lineItem;
-aifs:header "Accounts payable";
-aifs:is component of aifs:currentLiabilities.
+aifs:liabilities aifs:header "liabilities" ;
+    aifs:is_part_of aifs:balanceSheet,
+        "Balance Sheet" .
 
-aifs:accrued liabilities a aifs:lineItem;
-aifs:header "Accrued liabilities";
-aifs:is component of aifs:currentLiabilities.
-
-aifs:asset lease long term portion a aifs:lineitem;
-aifs: header "asset lease long term portion" ;
-aifs:is component of aifs:nonCurrentLiabilities.
-
-aifs:long-term debt a aifs:lineItem ;
-aifs:header "Long-term debt" ;
-aifs:is component of aifs:nonCurrentLiabilities.
+aifs:balanceSheet a aifs:balanceSheet ;
+    aifs:header "Balance Sheet" ;
+    aifs:is_part_of "Financials" ;
+    aifs:is_type_of aifs:finacials .
 
 
